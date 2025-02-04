@@ -1,36 +1,27 @@
 import Search from "./Search";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Login from "./Login";
 import DropdownPane from "./DropdownPane";
-
 import { CgMenu } from "react-icons/cg";
 import SideNav from "./SideNav";
 import NavMenu from "./NavMenu";
-
 import { useRouter } from "next/router";
 import SortMenu from "./SortMenu";
-
-import { useSession } from "next-auth/react";
 import { useScroll } from "../hooks/useScroll";
-
 import { usePlausible } from "next-plausible";
 import { useMainContext } from "../MainContext";
 import FilterMenu from "./FilterMenu";
-import LoginProfile from "./LoginProfile";
 
 const NavBar = ({ toggleSideNav = 0 }) => {
   const context: any = useMainContext();
   const { setForceRefresh } = context;
   const [hidden, setHidden] = useState(false);
   const [allowHide, setallowHide] = useState(true);
-  const { data: session, status } = useSession();
   const [sidebarVisible, setSidebarVisible] = useState(false);
   const router = useRouter();
-  const [prevScrollpos, setScrollpos] = useState(0);
   const plausible = usePlausible();
-
   const { scrollY, scrollX, scrollDirection } = useScroll();
+
   useEffect(() => {
     toggleSideNav && setSidebarVisible(true);
     return () => {
@@ -131,11 +122,14 @@ const NavBar = ({ toggleSideNav = 0 }) => {
             </div>
             <div
               className={
-                "hidden w-20 h-full border  hover:border-th-border border-transparent rounded-md md:block"
+                "hidden w-20 h-full border hover:border-th-border border-transparent rounded-md md:block"
               }
-              //onClick={() => plausible("login")}
             >
-              <LoginProfile />
+              <Link href="/about">
+                <a className="flex items-center justify-center w-full h-full">
+                  About
+                </a>
+              </Link>
             </div>
 
             <div

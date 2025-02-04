@@ -3,6 +3,7 @@
 import Head from "next/head";
 import Link from "next/link";
 import { AiOutlineGithub } from "react-icons/ai";
+import { FaTelegram } from "react-icons/fa";
 import packageInfo from "../../package.json";
 const VERSION = packageInfo.version;
 const link = "text-th-link hover:underline hover:text-th-linkHover "
@@ -64,6 +65,14 @@ const AboutPage = ({ changelog }) => {
               className="hover:cursor-pointer"
             >
               <AiOutlineGithub className="w-12 h-12 transition-all hover:scale-110" />
+            </a>
+            <a
+              href="https://t.me/gina55s"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:cursor-pointer"
+            >
+              <FaTelegram className="w-12 h-12 transition-all hover:scale-110" />
             </a>
           </div>
         </div>

@@ -1,15 +1,13 @@
 import Search from "./Search";
 import { RiArrowGoBackLine } from "react-icons/ri";
-import { useSession, signIn, signOut } from "next-auth/react";
 import { useEffect, useRef, useState } from "react";
 import DropDownItems from "./DropDownItems";
 import { Menu } from "@headlessui/react";
-import LoginProfile from "./LoginProfile";
+import Link from "next/link";
 
 const scrollStyle = "scrollbar-thin scrollbar-thumb-th-scrollbar scrollbar-track-transparent scrollbar-thumb-rounded-full scrollbar-track-rounded-full"
 
-const SideNav = ({ visible, toggle }) => {
-  const { data: session, status } = useSession();
+const SideNav = ({ visible = false, toggle }) => {
   const [vis, setVis] = useState(false);
   const [touchStart, setTouchStart] = useState([0]);
   const [touchEnd, setTouchEnd] = useState([0]);
@@ -67,7 +65,9 @@ const SideNav = ({ visible, toggle }) => {
             <div className="flex flex-col justify-start w-full h-screen space-y-4 ">
               <div className="flex flex-row items-center justify-between w-full ">
                 <div className="">
-                  <LoginProfile />
+                  <Link href="/about">
+                    <a className="px-4 py-2">About</a>
+                  </Link>
                 </div>
                 <RiArrowGoBackLine
                   onClick={() => toggle()}
