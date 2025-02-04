@@ -1,9 +1,6 @@
 import Search from "./Search";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import DropdownPane from "./DropdownPane";
-import { CgMenu } from "react-icons/cg";
-import SideNav from "./SideNav";
 import NavMenu from "./NavMenu";
 import { useRouter } from "next/router";
 import SortMenu from "./SortMenu";
@@ -17,20 +14,12 @@ const NavBar = ({ toggleSideNav = 0 }) => {
   const { setForceRefresh } = context;
   const [hidden, setHidden] = useState(false);
   const [allowHide, setallowHide] = useState(true);
-  const [sidebarVisible, setSidebarVisible] = useState(false);
   const router = useRouter();
   const plausible = usePlausible();
   const { scrollY, scrollX, scrollDirection } = useScroll();
 
   useEffect(() => {
-    toggleSideNav && setSidebarVisible(true);
-    return () => {
-      setSidebarVisible(false);
-    };
-  }, [toggleSideNav]);
-  useEffect(() => {
     if (allowHide && !context?.loading) {
-      //console.log(scrollDirection, scrollY);
       if (scrollDirection === "down" || !scrollY) {
         setHidden(false);
       } else if (scrollY > 300 && scrollDirection === "up" && !hidden) {
@@ -45,8 +34,6 @@ const NavBar = ({ toggleSideNav = 0 }) => {
 
   const forceShow = () => {
     if (hidden) {
-      //console.log("forceshow");
-
       setHidden(false);
     }
   };
@@ -79,16 +66,8 @@ const NavBar = ({ toggleSideNav = 0 }) => {
           " z-50 fixed top-0 transition duration-500 ease-in-out transform h-14 w-screen "
         }
       >
-        <SideNav visible={sidebarVisible} toggle={setSidebarVisible} />
         <nav className="flex flex-row items-center flex-grow h-full shadow-lg bg-th-background2 md:justify-between ">
-          <CgMenu
-            className="w-10 h-10 cursor-pointer md:hidden"
-            onClick={() => {
-              setSidebarVisible((vis) => !vis);
-              // plausible("sidenav");
-            }}
-          />
-          <div className="flex flex-row items-center justify-start h-full mr-2 space-x-2">
+          <div className="flex flex-row items-center justify-start h-full mr-2">
             <Link href="/" passHref>
               <a>
                 <h1
@@ -99,15 +78,8 @@ const NavBar = ({ toggleSideNav = 0 }) => {
                 </h1>
               </a>
             </Link>
-
-            <div
-              className="flex-none hidden h-full py-2 md:block w-60"
-              onClick={() => plausible("dropdownPane")}
-            >
-              <DropdownPane hide={hidden} />
-            </div>
           </div>
-          <div className="hidden w-full h-full py-2 max-w-7xl md:block">
+          <div className="w-full h-full py-2 max-w-7xl md:block">
             <Search id={"subreddit search main"} />
           </div>
           <div className="flex flex-row items-center justify-end h-full py-2 ml-auto mr-2 space-x-1 md:ml-2">
