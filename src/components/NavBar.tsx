@@ -8,6 +8,8 @@ import { useScroll } from "../hooks/useScroll";
 import { usePlausible } from "next-plausible";
 import { useMainContext } from "../MainContext";
 import FilterMenu from "./FilterMenu";
+import { FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 const NavBar = ({ toggleSideNav = 0 }) => {
   const context: any = useMainContext();
@@ -81,6 +83,24 @@ const NavBar = ({ toggleSideNav = 0 }) => {
           </div>
           <div className="w-full h-full py-2 max-w-7xl md:block">
             <Search id={"subreddit search main"} />
+          </div>
+          <div className="flex items-center ml-4 space-x-2">
+            <a
+              href="https://t.me/freereddit"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:cursor-pointer"
+            >
+              <FaTelegram className="w-6 h-6 transition-all hover:scale-110" />
+            </a>
+            <a
+              href="https://x.com/freeddit"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:cursor-pointer"
+            >
+              <FaXTwitter className="w-6 h-6 transition-all hover:scale-110" />
+            </a>
           </div>
           <div className="flex flex-row items-center justify-end h-full py-2 ml-auto mr-2 space-x-1 md:ml-2">
             <div className="w-20 h-full">

@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
       curVersion,
       localStorage.getItem("freedditVersion") ?? ""
     );
-    if (compare === 1) {
+    if (false) {
       localStorage.setItem("freedditVersion", curVersion);
       const toastId = toast.custom(
         (t) => (
@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
             mode={"version"}
           />
         ),
-        { position: "bottom-center", duration: 8000 }
+        { position: "bottom-center", duration: 0 }
       );
     }
   }, []);

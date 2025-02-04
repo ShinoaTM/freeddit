@@ -18,7 +18,6 @@ const AboutPage = ({ changelog }) => {
         <div className="flex flex-col justify-center max-w-xl min-h-full gap-4 mx-auto space-y-1 overflow-y-scroll scrollbar-none ">
           <p className="">
             <b>FREEDDIT</b> is a privacy-first, open-source alternative to Reddit. No ads, no logins, no limits. Browse subreddits, follow users, and access public data freely. Designed for both users and developers, FREEDDIT eliminates the clutter and restrictions of traditional Reddit access.
- 
           </p>
 
           <p className="">
@@ -32,6 +31,24 @@ const AboutPage = ({ changelog }) => {
             <li><strong>Twitter:</strong> <a href="https://x.com/freeddit">x.com/freeddit</a></li>
             <li>Open an issue on <strong>GitHub</strong> or contact the team directly.</li>
           </ul>
+
+          <div className="pt-4 mt-4 border-t border-th-border">
+            <h3 className="mb-4 text-xl font-bold">Token $freeddit</h3>
+            <ul className="space-y-2">
+              <li><strong>Supply:</strong> 1,000,000,000 $freeddit</li>
+              <li><strong>CA:</strong> 00000000000000000000000</li>
+              <li><strong>Distribution:</strong>
+                <ul className="ml-4 mt-1">
+                  <li>90% market/liquidity</li>
+                  <li>10% team</li>
+                </ul>
+              </li>
+              <li className="flex items-center space-x-4">
+                <span><strong>Buy:</strong> <a href="#" className="text-th-link hover:underline">link</a></span>
+                <span><strong>Chart:</strong> <a href="#" className="text-th-link hover:underline">link</a></span>
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="absolute left-0 w-full bottom-5 sm:bottom-20">
           <div className="flex items-center justify-between max-w-xl mx-4 sm:mx-auto">
