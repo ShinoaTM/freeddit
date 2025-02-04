@@ -16,37 +16,22 @@ const AboutPage = ({ changelog }) => {
       <div className="h-full text-justify text-th-text ">
         <div className="flex flex-col justify-center max-w-xl min-h-full gap-4 mx-auto space-y-1 overflow-y-scroll scrollbar-none ">
           <p className="">
-            Freeddit is a web app for Reddit that gets rid off all the extra
-            curicular bullshit that's taken over the site. Follow subreddits and users locally
-            or login with your Reddit account to vote, comment, and manage your
-            existing subscriptions.
+            <b>FREEDDIT</b> is a privacy-first, open-source alternative to Reddit. No ads, no logins, no limits. Browse subreddits, follow users, and access public data freely. Designed for both users and developers, FREEDDIT eliminates the clutter and restrictions of traditional Reddit access.
+ 
           </p>
 
           <p className="">
-            This site not affiliated with Reddit. All content
-            on this site is fetched from the public [Reddit API](https://www.reddit.com/dev/api/).
+            This site <b>is not affiliated with Reddit</b>. All content
+            on this site is fetched from the public <a href="https://www.reddit.com/dev/api/">Reddit API</a>.
           </p>
 
-          <p className="">
-            For any feature requests, bug reports, or general conversation head
-            over to <Link href={"/r/freeddit"}><a className={link}>r/freeddit</a></Link>.
-            You can also create an issue on{" "}
-            <a
-              href="https://github.com/Gyarbij/freeddit"
-              target="_blank"
-              rel="noreferrer"
-              className={link}
-            >
-              GitHub
-            </a>{" "}
-            or contact me at{" "}
-            <a
-              className={link}
-              href="mailto: gyarbij@pm.me"
-            >
-              gyarbij@pm.me
-            </a> for anything else.
-          </p>
+          <p>For feature requests, bug reports, or collaborations, visit <strong><a href="https://freeddit.com">freeddit.com</a></strong> or join the discussion:</p>
+          <ul>
+            <li><strong>Telegram:</strong> <a href="https://t.me/freeddit">@freeddit</a></li>
+            <li><strong>Twitter:</strong> <a href="https://x.com/freeddit">x.com/freeddit</a></li>
+            <li>Open an issue on <strong>GitHub</strong> or contact the team directly.</li>
+          </ul>
+
           <p className="">
             <Link href={"/changelog"}>
               <a className="flex flex-wrap justify-between pt-5 font-semibold hover:underline">
@@ -67,7 +52,7 @@ const AboutPage = ({ changelog }) => {
               <AiOutlineGithub className="w-12 h-12 transition-all hover:scale-110" />
             </a>
             <a
-              href="https://t.me/gina55s"
+              href="https://t.me/freeddit"
               target="_blank"
               rel="noreferrer"
               className="hover:cursor-pointer"
