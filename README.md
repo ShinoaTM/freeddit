@@ -1,1 +1,47 @@
-# Freeddit\n\nA modern, fast, and privacy-focused Reddit client built with Next.js.\n\n## Features\n\n- Modern UI with Tailwind CSS\n- Fast and responsive\n- Privacy-focused\n- Docker support\n- PWA support\n\n## Development\n\nInstall dependencies:\nyarn install\n\nRun development server:\nyarn dev\n\nBuild for production:\nyarn build\n\n## Docker\n\nBuild container:\ndocker build -t freeddit .\n\nRun container:\ndocker run -p 3000:3000 freeddit\n\n## License\n\nMIT
+# Freeddit
+
+A modern, fast, and privacy-focused Reddit client built with Next.js.
+
+## Features
+
+- Modern UI with Tailwind CSS
+- Fast and responsive
+- Privacy-focused
+- Docker support
+- PWA support
+
+## Development
+
+Install dependencies:
+
+```bash
+yarn install
+```
+
+Run development server:
+
+```bash
+yarn dev
+```
+
+Build for production:
+
+```bash
+yarn build
+```
+
+## Docker
+
+Build container:
+
+```bash
+docker build -t freeddit .
+```
+
+Run container:
+
+```bash
+docker run -p 3000:3000 freeddit
+```
+
+## License

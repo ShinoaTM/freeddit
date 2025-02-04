@@ -4,6 +4,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { AiOutlineGithub } from "react-icons/ai";
 import { FaTelegram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import packageInfo from "../../package.json";
 const VERSION = packageInfo.version;
 const link = "text-th-link hover:underline hover:text-th-linkHover "
@@ -27,19 +28,10 @@ const AboutPage = ({ changelog }) => {
 
           <p>For feature requests, bug reports, or collaborations, visit <strong><a href="https://freeddit.com">freeddit.com</a></strong> or join the discussion:</p>
           <ul>
-            <li><strong>Telegram:</strong> <a href="https://t.me/freeddit">@freeddit</a></li>
+            <li><strong>Telegram:</strong> <a href="https://t.me/freereddit">@freeddit</a></li>
             <li><strong>Twitter:</strong> <a href="https://x.com/freeddit">x.com/freeddit</a></li>
             <li>Open an issue on <strong>GitHub</strong> or contact the team directly.</li>
           </ul>
-
-          <p className="">
-            <Link href={"/changelog"}>
-              <a className="flex flex-wrap justify-between pt-5 font-semibold hover:underline">
-                <h4>v{VERSION}</h4>
-                <h4>See Changelog</h4>
-              </a>
-            </Link>
-          </p>
         </div>
         <div className="absolute left-0 w-full bottom-5 sm:bottom-20">
           <div className="flex items-center justify-between max-w-xl mx-4 sm:mx-auto">
@@ -52,12 +44,21 @@ const AboutPage = ({ changelog }) => {
               <AiOutlineGithub className="w-12 h-12 transition-all hover:scale-110" />
             </a>
             <a
-              href="https://t.me/freeddit"
+              href="https://t.me/freereddit"
               target="_blank"
               rel="noreferrer"
               className="hover:cursor-pointer"
             >
               <FaTelegram className="w-12 h-12 transition-all hover:scale-110" />
+            </a>
+            {/* X link */}
+            <a
+              href="https://x.com/freeddit"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:cursor-pointer"
+            >
+              <FaXTwitter className="w-12 h-12 transition-all hover:scale-110" />
             </a>
           </div>
         </div>
