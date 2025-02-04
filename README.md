@@ -45,3 +45,6 @@ docker run -p 3000:3000 freeddit
 ```
 
 ## License
+
+Copyright 2025 Freeddit Team & Contributors. 
+Licensed under GPLv3.
